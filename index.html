@@ -7,12 +7,45 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles_1.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="navStyle.css">
 
   </head>
   <body>
 
-      <link rel="stylesheet" type="text/css" href="navStyle.css">
   	<div id="menu"></div>
+
+
+  	<div> 
+
+
+  		<div class="container text-center" style="height: 500px; margin-top: 250px;">
+  			
+    		<div class="row">
+
+
+	    		<div class="col-md">
+	    			1
+		  		</div>
+	    		<div class="col-md">
+	    			2
+		  		</div>
+	    		<div class="col-md">
+	    			3
+		  		</div>
+
+
+  		</div>
+
+
+
+  	</div>
+
+
+
+
+  	<div id="footer"></div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,6 +58,11 @@
     	$.get("menu.html", function(data){
     		console.log(data);
 		    $("#menu").append(data);
+		});
+
+    	$.get("footer.html", function(data){
+    		console.log(data);
+		    $("#footer").append(data);
 		});
 
 
