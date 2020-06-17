@@ -1,0 +1,19 @@
+.navbar
+{
+
+	background-color: #BEBEBE;
+	/*position: fixed;*/
+
+}
+
+.navbar-full {
+	position: fixed;
+	top:0;
+	width: 100%;
+	color: green;
+
+}
+
+.navbar-bot {
+	margin-top: 12px;
+}
