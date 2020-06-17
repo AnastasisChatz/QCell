@@ -1,0 +1,40 @@
+* {
+	font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+/*----- FOOTER ------*/
+
+footer {
+	background: #858585;
+	color:white;
+	font-size: 0.9em;
+	height: 250px;
+}
+
+footer a {
+	color:white;
+	font-size: 0.9em;
+}
+
+footer a:hover {
+	color:white;
+}
+
+footer h5 {
+	color :#00adec;
+	font-size: 1.1em;
+}
+
+.footer-main {
+	height: 200px;
+}
+
+.footer-copyright {
+	background: #656565;
+	height: 50px;
+}
