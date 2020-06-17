@@ -10,10 +10,20 @@
 	position: fixed;
 	top:0;
 	width: 100%;
-	color: green;
+	/*color: green;*/
 
 }
 
 .navbar-bot {
 	margin-top: 12px;
+}
+
+.nav-items
+{
+
+	color: green;
+	font-family: Verdana;
+	font-size: 15px;
+	text-align: center;
+	width: 16%;
 }
