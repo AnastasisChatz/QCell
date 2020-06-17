@@ -1,29 +1,130 @@
 .navbar
 {
+}
 
-	background-color: #BEBEBE;
-	/*position: fixed;*/
+#top-menu-1 {
+	border-right: 1px solid white;
+}
 
+#top-menu-2 {
+	border-right: 1px solid white;
+}
+
+#top-menu-3 {
+	border-right: 1px solid white;
+}
+
+.navbar-top {
+	width: 100%;
+	margin: 0;
+		padding:0;
+	background: #858585;
+}
+
+.top-menu-item {
+	width: 24%;
+
+	margin-left: 0px;
+	margin-right: 0px;
+
+	text-align: center;
+	
+	font-size: 1em;
+		font-weight: 400;
+		line-height: 2.5;
+
+		font-size: 0.9em;
+
+
+	background: #858585;
+		color: white;
+
+		display: inline-block;
+}
+
+.top-menu-item-active {
+	width: 24%;
+	text-align: center;
+	
+	font-size: 1em;
+		font-weight: 400;
+		line-height: 2.5;
+
+	margin-left: -5px;
+	margin-right: -5px;
+
+		font-size: 0.9em;
+
+	color: #858585;
+		background: white;
+
+		display: inline-block;
+}
+
+.navbar-main {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .navbar-full {
 	position: fixed;
 	top:0;
 	width: 100%;
-	/*color: green;*/
+	margin: 0;
+	background: white;
+
+
+	z-index: 1;
 
 }
 
 .navbar-bot {
-	margin-top: 12px;
+	height: 100px;
+	width: 100%;
+	background: white;
+	text-align: center;
+	border-bottom: 1px solid gray;
 }
 
 .nav-items
 {
-
-	color: green;
 	font-family: Verdana;
 	font-size: 15px;
 	text-align: center;
-	width: 16%;
+	display: inline-block;
+		padding: 2%;
+}
+
+.nav-items a {
+	color: #252525;
+}
+
+.nav-items a:hover {
+	text-decoration: none;
+}
+
+
+.nav-items a:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    border-bottom: 3px solid #252525;
+    display: block;
+    height: 2px;
+    width: 0;
+}
+.nav-items a:hover:after {
+    width: 100%;
+}
+
+#logo-helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#logo-img {
+		vertical-align: middle;
+		height: 60px;
 }

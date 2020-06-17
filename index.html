@@ -19,7 +19,7 @@
   	<div> 
 
 
-  		<div class="container text-center" style="height: 500px; margin-top: 250px;">
+  		<div class="container text-center" style="height: 800px; margin-top: 250px;">
   			
     		<div class="row">
 
@@ -58,12 +58,15 @@
     	$.get("menu.html", function(data){
     		console.log(data);
 		    $("#menu").append(data);
+		    
+			$("#top-menu-2").removeClass("top-menu-item");
+			$("#top-menu-2").addClass("top-menu-item-active");
 		});
 
     	$.get("footer.html", function(data){
-    		console.log(data);
 		    $("#footer").append(data);
 		});
+
 
 
     </script>
