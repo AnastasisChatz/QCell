@@ -17,8 +17,17 @@
 .navbar-top {
 	width: 100%;
 	margin: 0;
-		padding:0;
+	padding:0;
 	background: #858585;
+}
+
+.top-menu-item a {
+	color: white;
+}
+
+.top-menu-item a:hover {
+	color: orange;
+	text-decoration: none;
 }
 
 .top-menu-item {
@@ -29,36 +38,42 @@
 
 	text-align: center;
 	
-	font-size: 1em;
-		font-weight: 400;
-		line-height: 2.5;
-
-		font-size: 0.9em;
+	font-weight: 400;
+	line-height: 2.5;
+	font-size: 0.9em;
 
 
 	background: #858585;
-		color: white;
+	color: white;
 
-		display: inline-block;
+	display: inline-block;
 }
 
 .top-menu-item-active {
 	width: 24%;
 	text-align: center;
 	
-	font-size: 1em;
-		font-weight: 400;
-		line-height: 2.5;
+	font-weight: 400;
+	line-height: 2.5;
 
 	margin-left: -5px;
 	margin-right: -5px;
 
-		font-size: 0.9em;
+	font-size: 0.9em;
 
+	background: white;
+
+	display: inline-block;
+}
+
+
+.top-menu-item-active a {
 	color: #858585;
-		background: white;
+}
 
-		display: inline-block;
+.top-menu-item-active a:hover {
+	color: #858585;
+	text-decoration: none;
 }
 
 .navbar-main {
@@ -72,19 +87,24 @@
 	top:0;
 	width: 100%;
 	margin: 0;
-	background: white;
-
-
 	z-index: 1;
+}
 
+.scrolled {
+  max-height: 70px!important;
+  transition: max-height 800ms linear;
+  background-color: #FFFFFFAA!important;
 }
 
 .navbar-bot {
+
 	height: 100px;
+	max-height: 100px;
 	width: 100%;
-	background: white;
 	text-align: center;
 	border-bottom: 1px solid gray;
+  transition: max-height 200ms linear;
+  background-color: white; 
 }
 
 .nav-items
