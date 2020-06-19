@@ -19,6 +19,7 @@ if(isset($_POST['upload']))
     $file_tem_loc = $_FILES['upload_file'] ['tmp_name'];
     $file_store = "upload/".$file_name;
     move_uploaded_file($file_tem_loc, $file_store);
+    
 
 }
 
@@ -41,7 +42,7 @@ try {
    
 
  
-    // $mail->addAttachment($file);
+    $mail->addAttachment($file_store);
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $subject;
@@ -50,7 +51,8 @@ try {
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    header("refresh:2; url: Contact.html");
+
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
