@@ -32,7 +32,7 @@
     </div>
     <div class="col-md">
         <div class = "container">
-      <form action = "form_process.php" method = "post">
+      <form action = "form_process.php" method = "post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="email">Email address</label>
         <input type="email" class="form-control" id="email" name = "email" aria-describedby="emailHelp" placeholder="Enter email">
@@ -50,20 +50,15 @@
         <label for="comments">Type Your Message</label>
         <textarea class="form-control" id="comments" name ="comments" rows="3"></textarea>
       </div> 
-       <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text">Upload</span>
-      </div>
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" id="file" name = "file">
-        <label class="custom-file-label" for="file">Choose file</label>
-      </div>
-    </div>
+        <div class = "custom-file">
+          <input type="file" class="custom-file-input" id="upload_file" name = "upload_file">
+          <label class="custom-file-label" for="upload_file">Choose file</label>
+          </div>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="Check">Check me out</label>
       </div>
-      <button href = "#"  type="submit" class="btn btn-primary">Submit</button>
+      <button href = "#"  type="submit" name = "upload" class="btn btn-primary">Submit</button>
     </form>
   </div>
     </div>

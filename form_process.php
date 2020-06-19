@@ -11,7 +11,16 @@ $email = $_POST['email'];
 $name = $_POST['name'];
 $subject = $_POST['subject'];
 $comments = $_POST['comments'];
-$file = $_POST['file'];
+
+
+if(isset($_POST['upload']))
+{
+    $file_name = $_FILES['upload_file'] ['name'];
+    $file_tem_loc = $_FILES['upload_file'] ['tmp_name'];
+    $file_store = "upload/".$file_name;
+    move_uploaded_file($file_tem_loc, $file_store);
+
+}
 
 $mail = new PHPMailer(true);
 
@@ -32,12 +41,12 @@ try {
    
 
  
-    $mail->addAttachment($file);
+    // $mail->addAttachment($file);
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $subject;
     // $mail->Body = $comments;
-    $mail->Body = $file;
+    $mail->Body = $email;
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
